@@ -15,6 +15,6 @@
   cout <<"enter the number :";
   cin>>a;
   cout << sumN(a) <<endl;
-  // cout << sumN(5) <<endl;
+ 
   return 0;
  }
