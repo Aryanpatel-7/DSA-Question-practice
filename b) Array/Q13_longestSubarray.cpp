@@ -17,7 +17,7 @@ int main (){
     } 
   }
   }
-  cout<<maxlen<<" ";
+   cout<<"the length of the longest subarray is :"<<maxlen;
   
   return 0;
 }
