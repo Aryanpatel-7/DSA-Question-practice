@@ -9,7 +9,7 @@ int main (){
   int n =sizeof(arr)/sizeof(int);
 
   vector<vector<int>>ans;
-  sort(arr,arr+n);
+  sort(arr,arr+n); 
 
   for (int i = 0; i < n; i++){
     if(i >0 && arr[i]==arr[i-1])continue;
