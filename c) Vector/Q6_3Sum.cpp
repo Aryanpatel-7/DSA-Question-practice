@@ -1,6 +1,5 @@
 // 3 sum (leetcode Q15)
 #include<iostream>
-#include<vector>
 #include<algorithm>
 using namespace std;
 
@@ -8,7 +7,6 @@ int main (){
   int arr []={-1,0,1,2,-1,-4};
   int n =sizeof(arr)/sizeof(int);
 
-  vector<vector<int>>ans;
   sort(arr,arr+n); 
 
   for (int i = 0; i < n; i++){
