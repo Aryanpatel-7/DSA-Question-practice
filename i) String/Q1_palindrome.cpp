@@ -24,6 +24,7 @@ while(st < end){
   if(!isAlphaNum(str[end])){
     end--; continue;
   }
+
   if(tolower(str[st]) != tolower(str[end])){
     cout<<"not palindrome";
    return 0;
