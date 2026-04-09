@@ -4,7 +4,7 @@ using namespace std;
 
 int SearchInsert(int arr[], int n, int target){
    int st=0, end =n-1;
-   int ans =-1;
+   int ans =n;
 
   while(st < end){
     int mid = st+(end-st)/2;
