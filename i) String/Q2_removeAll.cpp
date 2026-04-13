@@ -1,4 +1,4 @@
-//Remove All Occurrences of a Substring (leetcode 1910)
+// Remove All Occurrences of a Substring (leetcode 1910)
 
 #include <iostream>
 using namespace std;
