@@ -1,4 +1,4 @@
-// longest common prefix (leetcode Q)
+// longest common prefix (leetcode Q14)
 
 #include <iostream>
 #include <vector>
