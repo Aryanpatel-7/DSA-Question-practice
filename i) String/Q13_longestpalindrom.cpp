@@ -1,4 +1,4 @@
-//Longest Palindromic Substring (leetcode Q5)
+// Longest Palindromic Substring (leetcode Q5)
 
 #include <iostream>
 using namespace std;
