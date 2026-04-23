@@ -13,7 +13,7 @@ int firstBadVersion(int n, int bad) {
     while (left < right) {
         int mid = left + (right - left) / 2;
         
-        if (isBadVersion(mid, bad)) { 
+        if (isBadVersion(mid, bad)) {  
             right = mid;
         } else {
             left = mid + 1;
