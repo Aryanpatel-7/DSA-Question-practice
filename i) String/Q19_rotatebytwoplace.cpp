@@ -14,7 +14,6 @@ using namespace std;
   }
   s[0]=c;
 
-
  }
 int  rotateanticlockwise(string &s){
    char c =s[0];
