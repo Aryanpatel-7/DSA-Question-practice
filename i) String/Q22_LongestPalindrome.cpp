@@ -28,7 +28,7 @@ int main (){
     }
 
      if(upper[i]%2==0){
-      count+= upper[i];
+      count+= upper[i];  
     } else{
       count+= upper[i]-1;
       odd=1;
