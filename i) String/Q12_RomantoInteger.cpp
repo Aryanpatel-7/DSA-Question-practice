@@ -4,28 +4,35 @@
 #include <unordered_map>
 using namespace std ;
 
-int romanTointeger(string s){
-  int ans =0;
-  unordered_map<char,int> roam ={
-    {'I',1}, {'V',5}, {'X',10},{'L',50},{'C',100},{'D',500},{'M',1000} };
+int num(char c){
 
-    for(int i=0; i<s.size()-1; i++){
-      if(roam[s[i]] < roam[s[i+1]]){
-        ans -= roam[s[i]];
-      } else {
-        ans += roam[s[i]];
-      }
-    }
-    return ans + roam[s.back()];
+    if(c =='I') return 1;
+    else if (c =='V') return 5;
+     else if (c =='X') return 10;
+      else if (c =='L') return 50;
+       else if (c =='C') return 100;
+        else if (c =='D') return 500;
+    else  return 1000;
 }
-
-
 
 int main (){
   string s ="MCMXCIV";
 
-  int ans =romanTointeger(s);
-  cout<<"Integer value :"<< ans;
+  int sum =0,  index=0;
+
+    while(index < s.size()-1){
+        if(num(s[index]) < num(s[index+1]))
+        {
+            sum-= num(s[index]);
+        } 
+        else {
+            sum+= num(s[index]);
+           
+        }
+        index++;
+    }
+      sum+=num(s[index]);
+      cout<<sum;
 
   return 0;
 
