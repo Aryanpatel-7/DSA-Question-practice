@@ -1,31 +1,26 @@
 //  Longest Substring Without Repeating Characters (leetcode Q3)
 #include <iostream>
-#include <unordered_map>
+#include<vector>
 using namespace std;
 
-int lengthOfLongestSubstring(string s)
-{
-  unordered_map<char, int> mp;
-  int left = 0, maxLength = 0;
 
-  for (int right = 0; right < s.length(); right++)
-  {
-    if (mp.find(s[right]) != mp.end() && mp[s[right]] >= left)
-    {
-      left = mp[s[right]] + 1;
-    }
-
-    mp[s[right]] = right;
-    maxLength = max(maxLength, right - left + 1);
-  }
-
-  return maxLength;
-}
 
 int main()
 {
-  string s = "abba";
-  cout << lengthOfLongestSubstring(s);
+  string s = "abcabcbb";
+  vector<bool>count(256,0);
+  int first=0, second=0, len=0;
 
+  while(second < s.size()){
+
+    while(count[s[second]]){
+      count[s[first]]=0;
+      first++;
+    }
+    count[s[second]]=1;
+    len=max(len,second-first+1);
+    second++;
+  }
+   cout<<len;
   return 0;
 }
